@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+    font-size: 0.999em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background-color: #b370f3;
+    height: 100vh;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding-bottom: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.253);
+    width: 80vw;
+    max-width: 300px;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+
+
+
+/* CONFIGURAÇÃO DA IMAGEM */
+section#section-img img {
+    width: 100%;
+    height: 180px;
+}
+
+
+
+/* ESTILIZAÇÃO DO FORMULARIO [FORM] */
+section#section-form {
+    padding: 5px;
+    text-align: center;
+    margin: 10px auto;
+    width: 100%;
+}
+
+section#section-form h1 {
+    font: bold 2em serif;
+}
+
+section#section-form p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+    padding: 0px 10px;
+}
+
+section#section-form a {
+    color: blue;
+    display: inline-block;
+    padding: 3px;
+    text-decoration: none;
+}
+section#section-form a:hover {
+    text-decoration: underline;
+}
+
+
+section#section-form div.input {
+    position: relative;
+    background-color: #b370f3;
+    margin: 10px auto;
+    padding: 2px;
+    text-align: right;
+    border-radius: 3px;
+    width: 95%;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    font-size: 1.1em;
+    background-color: #c3e3e6f5;
+    padding: 0px 4px;
+    border: solid .5px black;
+    width: 80%;
+    height: 35px;
+}
+
+
+/* ESTILIZAÇÃO DOS SIMBOLOS NOS IMPUTS */
+.material-symbols-outlined {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    display: block;   
+}
+.material-symbols-outlined:hover {
+    cursor: pointer;
+}
+
+section#section-form input[type="submit"] {
+    font-size: 1.3em;
+    background-color: blue;
+    color: white;
+    border: solid 1px transparent;
+    margin: 10px 0px;
+    border-radius: 5px;
+    width: 90%;
+    height: 40px;
+}
+section#section-form input[type="submit"]:hover {
+    background-color: rgb(13, 13, 172);
+    transition: .2s;
+}

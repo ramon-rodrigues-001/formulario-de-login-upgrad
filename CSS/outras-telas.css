@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*
+pequenas < 600px
+Celular  600px até 768px
+Tablet   768px até 992px
+Pc,s     992 até 1200px
+Grandes > 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to bottom, #a64df9, #95d2f3);
+    }
+
+    main {
+        display: flex;
+        padding: 0px;
+        width: 85vw;
+        max-width: 700px;
+        max-height: 350px;
+        transition: 0.4s;
+    }
+    
+    section#section-img img {
+        width: 230px;
+        height: 100%;
+        border-radius: 0px 90px 0px 0px;
+    }
+
+    input[type="email"], input[type="password"], input[type="text"] {
+        width: 85%;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: linear-gradient(to bottom, #a64df9, #95d2f3);
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0px;
+        width: 85vw;
+        max-width: 900px;
+        max-height: 300px;
+        transition: 0.4s;
+    }
+
+    section#section-img img {
+        width: 400px;
+        height: 100%;
+        border-radius: 90px 0px 0px 0px;
+    }
+
+    
+    input[type="email"], input[type="password"], input[type="text"] {
+        width: 85%;
+    }
+}
